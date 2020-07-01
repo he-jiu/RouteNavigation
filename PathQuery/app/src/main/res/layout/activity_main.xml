@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+
+        <include layout="@layout/title_bar"></include>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/banner"
+                android:layout_width="384dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/dhzz_button"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/zzquerybutton1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="站站查询"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/dhcc_button"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ccquerybutton1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车次查询"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/dhmenu_button"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menubutton"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:text="首页"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/dhcz_button"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/czqueerybutton1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="10dp"
+                    android:text="车站查询"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/dhtj_button"
+                    android:layout_gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/addbutton1" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加车站"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

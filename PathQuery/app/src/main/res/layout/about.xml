@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+
+        <include layout="@layout/title_bar"></include>
+
+        <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner"
+            android:layout_width="384dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/input3"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_margin="30dp">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="易通行v1.0.0
+版权归垃圾电子科技有限公司所有
+版权所有仿冒必究
+注意本软件与北京市地铁APP“亿通行没有任何关系"
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="            更多请点击访问此官方网站"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/dhzz_button"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/zzquerybutton1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="站站查询"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/dhcc_button"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ccquerybutton1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车次查询"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/dhmenu_button"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/menubutton"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:text="首页"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/dhcz_button"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/czqueerybutton1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="10dp"
+                    android:text="车站查询"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/dhtj_button"
+                    android:layout_gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/addbutton1" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加车站"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

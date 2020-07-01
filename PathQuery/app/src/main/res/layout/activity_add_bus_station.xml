@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DAO.addBusStation"
+    tools:layout_editor_absoluteY="81dp">
+
+    <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="384dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="77dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="站点添加"
+        app:layout_constraintBottom_toTopOf="@+id/banner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="52dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/backbut"
+        app:layout_constraintBottom_toTopOf="@+id/banner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout21"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/addcc" />
+
+            <AutoCompleteTextView
+                android:id="@+id/StationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="本站..." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到站时间" />
+
+            <EditText
+                android:id="@+id/arriveTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="到站时间" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出发时间" />
+
+            <EditText
+                android:id="@+id/leaveTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="出发时间" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下行站次" />
+
+            <EditText
+                android:id="@+id/ForwardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="下行站次" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上行站次" />
+
+            <EditText
+                android:id="@+id/BackwardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="上行站次" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="72dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="易通行"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/gotogy"
+        android:layout_width="100dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/aboutbutton1"
+        app:layout_constraintBottom_toTopOf="@+id/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gotohelp" />
+
+    <ImageButton
+        android:id="@+id/gotohelp"
+        android:layout_width="100dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/helpbutton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="359dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922">
+
+        <ImageButton
+            android:id="@+id/dhzz_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/zzquerybutton1" />
+
+        <ImageButton
+            android:id="@+id/dhcc_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/czqueerybs" />
+
+        <ImageButton
+            android:id="@+id/dhmenu_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/menubutton" />
+
+        <ImageButton
+            android:id="@+id/dhcz_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/czqueerybutton1" />
+
+        <ImageButton
+            android:id="@+id/dhtj_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/addzhanci" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="349dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout21"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/dhzz_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="站站查询" />
+
+        <TextView
+            android:id="@+id/dhcc_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="  车次查询" />
+
+        <TextView
+            android:id="@+id/dhmenu_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="    首页" />
+
+        <TextView
+            android:id="@+id/dhcz_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="车站查询" />
+
+        <TextView
+            android:id="@+id/dhtj_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=" 添加车站" />
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

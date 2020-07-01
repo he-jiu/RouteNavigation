@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BusRoutes</string>
+    <string name="BusAdd" />
+    <string name="bus_add">Bus Add</string>
+    <string name="station_add">Station Add</string>
+    <string name="bus_station_relation_add">Bus-Station Relation Add</string>
+</resources>

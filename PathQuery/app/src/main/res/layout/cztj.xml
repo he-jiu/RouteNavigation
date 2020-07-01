@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StationAdd">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="输入车站"/>
+
+            <EditText
+                android:id="@+id/StationMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="车站..."/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="输入车站简称"/>
+
+            <EditText
+                android:id="@+id/StationAbbreviation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="车站简称..."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/StationImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <Button
+                android:id="@+id/ImageSelectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择照片"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:layout_marginTop="300dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
